@@ -1,135 +1,259 @@
-* {
-    box-sizing: border-box;
-  }
-
-  body{
-      display: block;
-      margin: 8px;
-  }
-  main{
-    padding: 4rem;
-    min-height: calc(100vh - 60px);
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-    display: inline-block;
-  }
-  
-  li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: red;
-  }
-  
+li {
+	float: left;
+	size: 15px;
+}
+li a {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+h1{
+	font-size: 80px;
+}
 
-  .igs-header{
-    width: 100%;
-    height: 90px;
-    z-index: 35;
-    position: relative;
-    box-shadow: 0px 25px 25px -25px #131c25;
-    border-bottom: 1px solid #131c25;
-    background-color: #252e38;
-  }
+a{
+	color: #ffffff;
+}
 
-  .igs-footer{
-    width: 100%;
-    height: 60px;
-    display: flex;
-    z-index: 35;
-    position: relative;
-    box-shadow: 0px 25px 25px -25px #252e38;
-    align-items: center;
-    border-bottom: 1px solid #131c25;
-    color: white;
-    background-color:#252e38;
-    display: flex;
-    justify-content: space-around;
-  }
+body {
+	padding:1em 4em 1em 4em;
+}
 
-  .igs-algo-1{
-    display: grid;
-    grid-template-areas: 'Excercie_1.1 Excercie_1.2 Excercie_1.3';
-    grid-column-gap: 180px;
+.active{
+	background-color: #0066ff;
+}
+.nav-bar{
+	padding-left: 40px;
+	padding-right: 90px;
+}
+
+.bg-colors {
+	background-color: #111828;
+	color: #ffffff;
+}
+
+.grid-container {
+	display: grid;
+    grid-column-gap: 80px;
+    grid-template-areas: 'grid-item grid-item';
+	border-radius: 5px;
+    padding: 70px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-container-1{
+	display: grid;
+	grid-template-areas: 'igs-item-1 igs-item-4';
+	grid-column-gap: 180px;
 	padding: 70px;
-	grid-template-columns: repeat(3, 1fr);
-  }
+	grid-template-columns: repeat(2, 1fr);
+}
 
-  .igs-algo-2{
-    display: grid;
-    grid-template-areas: 'Excercie_1.4 Excercie_1.5 Excercie_1.6';
-    grid-column-gap: 180px;
+.grid-container-2{
+	display: grid;
+	grid-template-areas: 'igs-item-2 igs-item-3';
 	padding: 70px;
-	grid-template-columns: repeat(3, 1fr);
-  }
+	grid-column-gap: 80px;
+	grid-template-columns: repeat(2, 1fr);
+}
+.grid-container > div{
+	text-align: left;
+    padding: 20px 0;
 
-  .igs-algo-3{
-    display: grid;
-    grid-template-areas: 'Excercie_1.7 Excercie_1.8 Excercie_1.9';
-    grid-column-gap: 180px;
-	padding: 70px;
-	grid-template-columns: repeat(3, 1fr);
-  }
+}
+.grid-item{
+    padding: 10px;
+}
+.grid-presentation{
+	display: flex;
+	justify-content: space-between;
+}
+.flex-container{
+}
 
-  .igs-algo-1, .igs-algo-3{
-    background-color:#f4f4f4;
-    color: white;
-  }
-  .igs-algo-2{
-    background-color: black;
-    color: white;
-  }
+.igs-work{
+	display: inline-flex;
+	justify-content: space-around;
+	flex-direction: row-reverse;
+}
 
-  .igs-1 {
+.igs-work .p {
+	text-align: right;
+}
+.icone{
+	display: flex;
+	justify-content: flex-end;
+	align-content: space-between;
+	padding: 0px 10px;
+}
+.igs-icone li{
+	display: flex;
+	justify-content: space-around;
+	padding: 30px;
+}
+.igs-numbers{
+	font-size: 60px;
+	text-align: left;
+}
+.stat{
+	font-size: 28px;
+	text-align: left;
+}
+
+.impacted, .Retention{
+	margin-top: -18px;
+}
+.work-container{
+	width: 20%;
+}
+
+.igs-1 {
 	background-color:#212a39; 
 	padding: 20px;
 	margin: 15px;
 	border-radius: 5px;
 }
 
-.Excercie_1, .Excercie_2, .Excercie_3, .Excercie_4, .Excercie_5, .Excercie_6, .Excercie_7, .Excercie_8, .Excercie_9{
-  background-color:#f2bb13;
-  padding: 10px;
-	margin: 18px;
+.igs-1 > p > a {
+	text-decoration: none;
+}
+
+.igs-content{
+	font-size: 1rem;
+	padding-left: 20px;
+}
+
+.content{
+	font-size: 26px;
+}
+.project{
+	display: flex;
+	justify-content: flex-end;
+}
+.images-1, .images-2, .images-3{
+	background-color:#212a39;
+	padding: 1rem;
 	border-radius: 5px;
 }
-.igs-nav{
+
+
+.images-container{
+	display: grid;
+	grid-template-areas: 'images-1 images-2 images-3';
+	grid-gap: 18px;
+	grid-template-columns: repeat(3, 1fr);
+}
+.icone-container{
+	display: grid;
+	grid-template-areas: 'icone-1 icone-2 icone-3' 'icone-4 icone-5 icone-6';
+	grid-gap: 4px 230px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.igs-stat{
+	display: grid;
+	grid-template-areas: 'igs-project igs-retention-1' 'igs-retention-2 igs-users';
+	grid-column-gap: -10px;
+	grid-template-columns: repeat(2, 1fr); 
+}
+.igs-clients{
+	display: flex;
+	align-items: center;
+}
+.igs-client > p {
+	font-size: 13px;
+}
+
+.igs-presentation{
+	width: 100%;
+}
+
+.presentation{
+	padding-right: 120px;
+
+}
+.container-2 >p{
+	text-align: left;
+	padding-right: 52px;
+}
+
+/** Icone Work display  **/
+
+.fas,.fab-1 {
+	font-size: 88px;
+}
+
+.igs-icone > .fab{
+	font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 95%;
+  padding: 20px;
+  margin: 15px;
+  background-color: #384152;
+  border: 1px solid #384152;
+  border-radius: 4px;
+  resize: vertical;
+  color: #ffffff;
+  background-color: black;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.fname{
+	color: #ffffff;
+}
+
+input[type=submit] {
   color: white;
-  display: flex;
-  justify-content: space-around;
-  font-size: 30px;;
-  padding: 18px;
-}
-@media screen and (max-width: 500px){
-  .igs-algo-1, .igs-algo-2, .igs-algo-3 {
-    grid-template-columns: 1fr;
-}
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
 }
 
-@media screen and (max-width: 768px){
-  .igs-algo-1, .igs-algo-2, .igs-algo-3 {
-    grid-template-columns: repeat(2, 1fr);
+input[type=submit]:hover {
+  background-color: black;
 }
 
+/*.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1170px){
-  .igs-algo-1, .igs-algo-2, .igs-algo-3 {
-    grid-template-columns: repeat(3, 1fr);
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}*/
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
